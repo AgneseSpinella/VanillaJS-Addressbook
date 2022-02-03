@@ -29,6 +29,7 @@ button {
   background-color: #e9d2d2;
   border: 4px outset #ce5656;
   border-radius: 4px ;
+  cursor: pointer;
 }
 
 form input {
