@@ -1,0 +1,100 @@
+body{
+  background-color: #492f2f;
+  color: aliceblue;
+}
+
+h1{
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 90%;
+    margin: 50px auto 80px;
+    font-family: sans-serif;
+  }
+
+#add {
+  display: none;
+  grid-template-columns: 3fr 2fr;
+  margin: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  width: fit-content;
+  font-size: x-large;
+  background-color: #e9d2d2;
+  border: 4px outset #ce5656;
+  border-radius: 4px ;
+}
+
+form input {
+    line-height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    
+  }
+  
+.wrapper{
+  display: grid;
+  height: 250px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  margin-bottom: 80px;
+}
+
+.wrapper label {
+    display: block;
+    margin:20px 2px 0 150px;
+    font-size: x-large;
+}
+
+.wrapper input {
+  display: block;
+  height: 25px;
+  margin:20px 100px 0 2px;
+  font-size: x-large;
+}
+
+.searchForm label {
+  display: block;
+  font-size: x-large;
+  margin: 0;
+} 
+
+#modal {
+  margin: 125px;
+}
+
+.searchForm{
+  margin: 100px;
+}
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 200px;
+  }
+  
+  ul li {
+    color: black;
+    background-color: #e9d2d2;
+    border: 10px outset #ce5656;
+    border-radius: 4px ;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 10px;
+    }
+  }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widget contatti</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>Widget contatti in Vanilla JS</h1>
+    </header>
+    
+<div class="wrapper"> 
+    <form class="searchForm">
+      <label for="search">Cerca tra i contatti:</label>
+      <input type="text" name="search" id="search"
+        placeholder="Scrivi un nome" autocomplete="off" />
+      <button>Cerca</button>
+    </form>
+
+   
+    
+
+    <form id="add">
+      <label for="name">Nome contatto:</label>
+      <input type="text" id="name" name="name" autocomplete="off" >
+
+      <label for="phone">Telefono contatto:</label>
+      <input type="tel" id="phone" name="phone" autocomplete="off">
+
+      <label for="email">Email contatto:</label>
+      <input type="email" id="email" name="email" autocomplete="off">
+      <div></div>
+      <button>Crea nuovo contatto</button>   
+   
+    </form>
+    
+   <div>
+      <button id="modal">Aggiungi un nuovo contatto</button>
+    </div>
+ 
+
+    </div>
+
+    <ul>
+    </ul>
+  </main>
+  
+  <script src="./js/data.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
