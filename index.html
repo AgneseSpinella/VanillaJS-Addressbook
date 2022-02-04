@@ -19,7 +19,7 @@
     <form class="searchForm">
       <label for="search">Cerca tra i contatti:</label>
       <input type="text" name="search" id="search"
-        placeholder="Scrivi un nome" autocomplete="off" />
+        placeholder="Scrivi qui" autocomplete="off" />
     </form>
 
    
@@ -27,13 +27,13 @@
 
     <form id="add">
       <label for="name">Nome contatto:</label>
-      <input type="text" id="name" name="name" autocomplete="off"  >
+      <input type="text" id="name" name="name" autocomplete="off" required >
 
       <label for="phone">Telefono contatto:</label>
-      <input type="tel" id="phone" name="phone" autocomplete="off" >
+      <input type="tel" id="phone" name="phone" autocomplete="off" required>
 
       <label for="email">Email contatto:</label>
-      <input type="email" id="email" name="email" autocomplete="off" >
+      <input type="email" id="email" name="email" autocomplete="off" required>
    
       
       <button id="deleteBtn">Annulla</button>   
@@ -50,7 +50,6 @@
     <ul>
     </ul>
   </main>
-  
   <script src="./js/data.js"></script>
   <script src="./js/index.js"></script>
 </body>
