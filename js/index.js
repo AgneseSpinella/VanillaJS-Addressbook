@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const list = q('ul');
   const add = q('#add');
   const modal = q('#modal')
-  const wrapper =q('#wrapper')
+  const deleteBtn = q('#deleteBtn')
   
   render(list, data);
 
@@ -41,15 +41,20 @@ document.addEventListener('DOMContentLoaded', () => {
 modal.addEventListener('click', (event)=> {
   if (add.style.display !== "grid") {
     add.style.display = "grid";
-  
     modal.style.display ="none"
   } else {
     add.style.display = "none";
   }
 })
 
+deleteBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  add.style.display ="none"
+  modal.style.display ="grid"
+  
+})
 
-  add.addEventListener('submit', (event) => {
+add.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const newContact = {
