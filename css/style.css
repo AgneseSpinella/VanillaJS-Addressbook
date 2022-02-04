@@ -19,18 +19,37 @@ main {
   display: none;
   grid-template-columns: 3fr 2fr;
   margin: 20px;
+  border: 10px outset #664242;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
+}
+
+form button{
+  padding: 5px;
+  margin: 10px;
+  width: 150px;
+  height: 80px;
+  font-size: 20px;
+  background-color:  #dfdbdbe7;
+  border: 4px outset #664242;
+  border-radius: 20% ;
+  cursor: pointer;
 }
 
 button {
+  content: "+";
   padding: 10px;
   margin: 10px;
-  width: fit-content;
-  font-size: x-large;
-  background-color: #e9d2d2;
-  border: 4px outset #ce5656;
-  border-radius: 4px ;
+  width: 80px;
+  height: 80px;
+  font-size: 3em;
+  background-color: #dfdbdbe7;
+  border: 4px outset #664242;
+  border-radius: 50% ;
   cursor: pointer;
 }
+
 
 form input {
     line-height: 30px;
@@ -47,11 +66,12 @@ form input {
   grid-template-columns: 1fr 1fr;
   column-gap: 80px;
   margin-bottom: 80px;
+  
 }
 
 .wrapper label {
     display: block;
-    margin:20px 2px 0 150px;
+    margin:20px 2px 0 15px;
     font-size: x-large;
 }
 
@@ -61,6 +81,13 @@ form input {
   margin:20px 100px 0 2px;
   font-size: x-large;
 }
+
+.searchForm{
+  border: 10px outset #664242;
+  border-radius: 4px;
+  padding: 30px;
+  margin: 5px;
+  }
 
 .searchForm label {
   display: block;
@@ -84,9 +111,9 @@ form input {
   
   ul li {
     color: black;
-    background-color: #e9d2d2;
-    border: 10px outset #ce5656;
-    border-radius: 4px ;
+    background-color: #dfdbdbe7;
+    border: 5px inset #664242;
+    border-radius: 10px ;
     padding: 10px;
     margin: 5px;
     text-align: center;
